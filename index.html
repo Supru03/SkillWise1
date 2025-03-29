@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="https://img.icons8.com/?size=100&id=DVYs92keSxuf&format=png&color=000000">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>SkillWise</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="https://img.icons8.com/?size=100&id=DVYs92keSxuf&format=png&color=000000" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#dashboard">Instructor Dashboard</a></li>
+				<li><a href="#enroll_section">Enroll Courses</a></li>
+				<li><a href="#progress_section">Progress Tracking</a></li>
+				<li><a href="#contactus_section">Contact Us</a></li>
+				
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search courses..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/roshan.jpeg" alt="Username">
+			</div>
+			<ul>
+				<li><a href="#dashboard">Instructor Dashboard</a></li>
+				<li><a href="#enroll_section">Enroll Courses</a></li>
+				<li><a href="#progress_section">Progress Tracking</a></li>
+				<li><a href="#contactus_section">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+<!-- Dashboard -->
+<div class="title">
+	<span>Instructor Dashboard</span>
+<br><br>
+</div>
+<div id="dashboard" style="display: Instructor;">
+	<h2>Upload Courses</h2>
+	
+	<div id="upload-container">
+	  <input type="file" id="file-input" multiple>
+	  <div id="drag-drop-container">
+		<p>Drag and drop files here or click to browse</p>
+	  </div>
+	</div>
+  </div>
+
+
+<!-- Some Popular Subjects -->
+<div class="title">
+	<span>Enroll Courses</span>
+<br><br>
+</div>
+<div class="courses" id="enroll_section">
+	<center><div class="cbox">
+	<div class="det"><a href="subjects/jee.html"><img src="images/courses/book.png">JEE Preparation</a></div>
+	<div class="det"><a href="subjects/gate.html"><img src="images/courses/d1.png">GATE Preparation</a></div>
+	<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Daily Quiz</a></div>
+	</div></center>
+	<div class="cbox">
+	<div class="det"><a href="subjects/computer_courses.html"><img src="images/courses/computer.png">Computer Courses</a></div>
+	<div class="det"><a href="subjects/computer_courses.html#data"><img src="images/courses/data.png">Data Structures</a></div>
+	<div class="det"><a href="subjects/computer_courses.html#algo"><img src="images/courses/algo.png">Algorithm</a></div>
+	<div class="det det-last"><a href="subjects/computer_courses.html#projects"><img src="images/courses/projects.png">Projects</a></div>
+	</div>
+</div>
+<!-- Progress Tracking -->
+<div class="diffSection" id="progress_section">
+	<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Progress Tracking</p></center>
+	
+</div>
+<div class="extra">
+	<p>Improve learning to increase your progress!</p>
+	<div class="smbox">
+	<span><center><div class="data">0%</div><div class="det"></div>JEE</center></span>
+	<span><center><div class="data">0%</div><div class="det">GATE</div></center></span>
+	<span><center><div class="data">0%</div><div class="det">Data Structures</div></center></span>
+	<span><center><div class="data">0%</div><div class="det">Algorithm</div></center></span>
+	</div>
+
+<!-- CONTACT US -->
+<div class="diffSection" id="contactus_section">
+	<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+	<div class="csec"></div>
+	<div class="back-contact">
+		<div class="cc">
+		<form action="mailto:info@gmail.com" method="post" enctype="text/plain">
+			<label>First Name <span class="imp"></span></label><label style="margin-left: 185px">Last Name <span class="imp"></span></label><br>
+			<center>
+			<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+			</center>
+			<label>Email <span class="imp">*</span></label><br>
+			<input type="email" name="mail" style="width: 100%" required="required"><br>
+			<label>Message <span class="imp">*</span></label><br>
+			<input type="text" name="message" style="width: 100%" required="required"><br>
+			<label>Additional Details</label><br>
+			<textarea name="addtional"></textarea><br>
+			<button type="submit" id="csubmit">Send Message</button>
+		</form>
+		</div>
+	</div>
+</div>
+
+<!-- FEEDBACK -->
+<div class="title2" id="feedBACK">
+	<span>Give Feedback</span>
+	<div class="shortdesc2">
+		<p>Please share your valuable feedback to us</p>
+	</div>
+</div>
+
+<div class="feedbox">
+	<div class="feed">
+		<form action="mailto:info@gmail.com" method="post" enctype="text/plain">
+			<label>Your Name</label><br>
+			<input type="text" name="" class="fname" required="required"><br>
+			<label>Email</label><br>
+			<input type="email" name="mail" required="required"><br>
+			<label>Additional Details</label><br>
+			<textarea name="addtional"></textarea><br>
+			<button type="submit" id="csubmit">Send Message</button>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
